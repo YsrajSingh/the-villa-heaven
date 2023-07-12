@@ -1,0 +1,283 @@
+h1,
+nav,
+footer {
+    font-family: "Century Gothic", serif;
+}
+
+h2,
+h3,
+dt {
+    font-family: "Gabriola", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 400%;
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+dd {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: smaller;
+}
+
+#copyright {
+    flex-basis: 100%;
+    font-family: serif;
+    font-style: italic;
+}
+
+header,
+footer {
+    background-color: rgb(65, 132, 42);
+    color: #eee;
+}
+
+h2,
+nav a {
+    color: rgb(35, 102, 12);
+}
+
+footer nav a {
+    color: #eee;
+}
+
+h1 {
+    line-height: 400%;
+}
+
+h2,
+h3,
+dt nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1,
+nav,
+#copyright {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body,
+h1 {
+    margin: 0;
+}
+
+header {
+    grid-column: 1 / -1; /* Span across all columns */
+    background-image: url(imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    background-color: rgba(5, 72, 2, 0.5);
+    text-shadow: 2px 2px 10px white;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 40px 40px;
+}
+
+footer {
+    grid-column: 1 / -1; /* Span across all columns */
+    padding: 10px 10%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > div {
+    display: inline-block;
+    padding-left: 10%;
+    flex-grow: 1;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer nav a {
+    display: block;
+    padding: 0;
+    text-align: left;
+}
+
+#heroimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 40px 40px;
+}
+
+#categories img {
+    width: 100%;
+}
+
+nav a {
+    padding: 10px 40px;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+main {
+    border-left: 3px solid rgb(158, 194, 143);
+}
+
+h1 a {
+    text-decoration: none;
+    color: #eee;
+}
+
+h1 a:hover {
+    text-shadow: 0px 0px 1px #eee;
+}
+
+.item33::after {
+    content: "";
+    display: table;
+}
+
+.icon {
+    display: block;
+    font-size: 3em;
+    color: rgb(35, 102, 12);
+}
+
+.item25 {
+    width: 23%;
+    box-shadow: 0px 0px 20px #eee;
+    text-align: center;
+}
+
+#multicol {
+    display: flex;
+    justify-content: space-between;
+}
+
+#categories section:nth-of-type(2) {
+    grid-row: 1 / span 2;
+}
+
+.wrapper {
+    width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+    #pagecontainer {
+        display: block !important;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    footer nav ul {
+        flex-direction: row;
+    }
+
+    footer nav ul li {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    nav a {
+        padding: 10px 30px;
+    }
+
+    #categories section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #categories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        border-bottom: 1px solid rgb(158, 194, 143);
+    }
+
+    #multicol {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item25 {
+        width: 50%;
+    }
+
+    nav ul {
+        flex-direction: column !important;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .item33 {
+        float: none;
+        display: block;
+        padding-left: 40%;
+    }
+    #heroimg {
+        display: none;
+    }
+    footer > div {
+        width: 100%;
+    }
+}
+
+#pagecontainer {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
