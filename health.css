@@ -25,6 +25,9 @@ h3 {
     font-size: 1.3rem;
 }
 
+h4 {
+    font-size: 1.25em;
+}
 dd {
     font-weight: bold;
 }
@@ -81,7 +84,7 @@ header {
     grid-template-columns: auto auto;
     position: fixed;
     background-color: black;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     min-height: 1rem;
     justify-content: space-between;
@@ -207,30 +210,10 @@ nav a {
     margin: 40px auto;
 }
 
-.wrapper_intro {
+#wrapper > p {
     text-align: justify;
-    font-size: 1.1em;
 }
 
-.main > .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main > .row > .column {
-    flex: 25%;
-}
-
-.main > .row > .column > img {
-    height: 40vh;
-    object-fit: contain;
-}
-.main > .row > .column > p {
-    font-size: 1.5em;
-    font-variant: petite-caps;
-    text-decoration: underline;
-    font-weight: 600;
-}
 footer {
     grid-column: 1 / -1; /* Span across all columns */
     padding: 10px 10%;
@@ -264,13 +247,6 @@ footer nav a {
     text-align: left;
 }
 
-#heroimg {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
-
 nav a:hover {
     text-shadow: 0px 0px 1px rgb(20, 70, 20);
 }
@@ -289,6 +265,92 @@ h1 a:hover {
     display: table;
 }
 
+.top_container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.top_container > li {
+    float: left;
+    width: 20%;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.wrapper {
+    margin: 30px auto;
+    /* padding: 0 20px; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
+}
+.recipe {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: 400px;
+    object-fit: cover;
+}
+
+.recipe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    );
+    z-index: 1;
+}
+.image_one {
+    background-image: url(./images/strawberrybananasmoothie.jpg);
+}
+.image_two {
+    background-image: url(./images/Morrocon-Quino-Vegetable-Salad-3.jpg);
+}
+.image_three {
+    background-image: url(./images/Avocado-Pesto-4_Fixed-main-2.jpg);
+}
+.image_four {
+    background-image: url(./images/BFV17100_One-PanHerbLemonSalmon-Thumb02.jpg);
+}
+.image_five {
+    background-image: url(./images/web-Chocolate-Avocado-Mousse-landscape.jpg);
+}
+.image_six {
+    background-image: url(./images/detoxwater600.jpg);
+}
+
+.top_text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 2;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.bottom_text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 1024px) {
     #pagecontainer {
         display: block !important;
