@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 dd {
@@ -69,7 +69,7 @@ header {
     grid-column: 1 / -1; /* Span across all columns */
     background-position: 50% 0%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(./images/343242.jpg);
+        url(./images/ytyy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
@@ -221,25 +221,41 @@ main {
     padding: 20px 0px;
     border-bottom: 2px solid lightgrey;
 }
-.main > .row {
-    display: flex;
-    flex-wrap: wrap;
+
+.row {
+    text-align: justify;
 }
 
-.main > .row > .column {
-    flex: 25%;
-}
-
-.main > .row > .column > img {
-    height: 40vh;
-    object-fit: contain;
-}
-.main > .row > .column > p {
-    font-size: 1.5em;
-    font-variant: petite-caps;
-    text-decoration: underline;
+.ordered_list > b {
+    font-size: 1.1rem;
     font-weight: 600;
+    line-height: 2.5;
+    text-decoration: underline;
+    font-style: italic;
 }
+
+ol > li > ul > li {
+    list-style-type: disc;
+    font-weight: lighter;
+    text-decoration: none !important;
+    font-style: unset;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.blog_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #888;
+}
+.blog_post img {
+    width: 140px;
+    height: 100px;
+    padding: 20px;
+}
+
 footer {
     grid-column: 1 / -1; /* Span across all columns */
     padding: 10px 10%;
@@ -295,7 +311,8 @@ h1 a:hover {
     grid-template-columns: auto auto;
 }
 
-.column {
+.column_one,
+.column_two {
     /* position: relative; */
     /* width: 100%; */
     padding: 0px 15px;
