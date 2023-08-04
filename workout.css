@@ -333,7 +333,7 @@ h1 a:hover {
     display: table;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     #top_bar {
         display: block;
         position: relative;
@@ -372,11 +372,10 @@ h1 a:hover {
         text-align: center;
     }
 
-    /* Responsive changes */
     header {
         margin-top: 0;
         min-height: 100vh;
-        background-position: center; /* Adjust background position for mobile */
+        background-position: center; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -387,15 +386,15 @@ h1 a:hover {
     }
 
     .banner_title {
-        font-size: 4rem; /* Adjust font-size for mobile */
+        font-size: 4rem; 
     }
 
     .banner_description {
-        font-size: 3rem; /* Adjust font-size for mobile */
+        font-size: 3rem; 
     }
 
     .banner_button {
-        font-size: 1.2rem; /* Adjust font-size for mobile */
+        font-size: 1.2rem;
     }
 
     .wrapper {
@@ -422,7 +421,7 @@ h1 a:hover {
     main {
         padding: 20px;
     }
-}
+} */
 
 #pagecontainer {
     display: grid;
