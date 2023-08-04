@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-h2,
+/* h2,
 h3,
 dt {
     font-family: "Gabriola", sans-serif;
@@ -71,7 +71,7 @@ h1 {
 
 header {
     margin-top: 4rem;
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1; 
     background-position: 50% 0%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(./images/fg5-min.jpg);
@@ -103,7 +103,7 @@ header {
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -283,7 +283,7 @@ td {
 }
 
 footer {
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1; 
     padding: 10px 10%;
     display: flex;
     flex-wrap: wrap;
@@ -331,9 +331,9 @@ h1 a:hover {
 .item33::after {
     content: "";
     display: table;
-}
+} */
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #top_bar {
         display: block;
         position: relative;
@@ -421,7 +421,7 @@ h1 a:hover {
     main {
         padding: 20px;
     }
-} */
+}
 
 #pagecontainer {
     display: grid;
