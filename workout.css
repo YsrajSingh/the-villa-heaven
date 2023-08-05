@@ -1,48 +1,62 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
 body {
     font-family: "Century Gothic", serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
 
-/* h2,
+h1,
+nav {
+    text-align: center;
+}
+
+h2,
 h3,
 dt {
     font-family: "Gabriola", sans-serif;
 }
+h2 {
+    padding: 20px 0;
+}
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5rem;
     font-weight: 500;
-    line-height: 400%;
+    line-height: 1.5;
     text-shadow: 2px 2px 10px white;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 h3 {
     font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 dd {
     font-weight: bold;
 }
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: smaller;
-}
-
 #copyright {
+    text-align: center;
     border-top: 2px solid white;
     padding-top: 20px;
+    margin-top: 20px;
     flex-basis: 100%;
     font-family: serif;
     font-style: italic;
@@ -51,33 +65,20 @@ footer {
 footer nav a {
     color: #eee;
 }
-
-h3,
-dt nav a {
-    text-transform: uppercase;
-    letter-spacing: 1px;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: smaller;
 }
-
-h1,
-nav,
-#copyright {
-    text-align: center;
-}
-
-body,
-h1 {
-    margin: 0;
-}
-
+/* Header styles */
 header {
-    margin-top: 4rem;
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1; /* Span across all columns */
     background-position: 50% 0%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(./images/fg5-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
 }
 
@@ -89,13 +90,16 @@ header {
     z-index: 1;
     width: 100%;
     min-height: 1rem;
+    align-items: center;
     justify-content: space-between;
 }
+
 #top_bar > img {
-    padding: 20px;
+    padding: 0 10px;
     height: 30px;
-    width: 200px;
+    width: 250px;
 }
+
 #top_list {
     min-height: 1rem;
     width: 100%;
@@ -124,10 +128,6 @@ header {
     background-color: #111;
 }
 
-#top_list > .active {
-    background-color: #4caf50;
-}
-
 header > div {
     width: 100%;
     min-height: 60vh;
@@ -139,9 +139,9 @@ header > div {
     flex-direction: column;
     justify-content: center;
 }
+
 .banner_logo {
-    width: 141px;
-    height: 87px;
+    width: 141px; /* Adjusted width for mobile responsiveness */
     margin: 1rem auto 0;
     object-fit: contain;
     background-size: contain;
@@ -157,7 +157,7 @@ header > div {
     font-weight: 700;
     font-size: 3.5rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    width: 673px;
+    width: 80%;
     margin: 1rem auto 0;
     line-height: 1.1;
     position: relative;
@@ -166,8 +166,9 @@ header > div {
     flex-shrink: 0;
     display: block;
 }
+
 .banner_description {
-    width: 755px;
+    width: 80%;
     font-size: 1.5rem;
     text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.4);
     margin: 1rem auto 0;
@@ -178,8 +179,6 @@ header > div {
     flex-shrink: 0;
     padding: 0;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     color: white;
 }
 
@@ -196,7 +195,7 @@ header > div {
     border: 2px solid white;
     padding: 20px;
     width: 200px;
-    margin: 10px auto 0;
+    margin: 1rem auto 0;
 }
 
 nav a {
@@ -283,7 +282,7 @@ td {
 }
 
 footer {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     padding: 10px 10%;
     display: flex;
     flex-wrap: wrap;
@@ -331,23 +330,50 @@ h1 a:hover {
 .item33::after {
     content: "";
     display: table;
-} */
+}
+*/ .column {
+    margin: 20px 0;
+}
+.column h4 {
+    padding: 10px 0px;
+}
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #top_bar {
+        text-align: center;
         display: block;
         position: relative;
+        background-color: black;
+        padding: 10px 0;
     }
 
-    #top_bar img {
-        width: 400px;
-        height: 75px;
+    #top_bar a {
+        display: block;
+        margin: 5px 0;
+        padding: 5px 10px !important;
+        color: white;
+        text-decoration: none;
+    }
+
+    #top_bar a:hover {
+        background-color: #111;
     }
 
     nav ul {
         flex-direction: column !important;
     }
+    h1 {
+        font-size: 2rem;
+    }
 
+    h2 {
+        font-size: 1.5rem;
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
     nav ul li {
         display: block;
     }
@@ -356,73 +382,52 @@ h1 a:hover {
         float: none;
         display: block;
         text-align: center;
+        margin: 20px 0;
     }
 
     footer > div {
         width: 100%;
     }
-    footer h3 {
-        font-size: 4rem;
-    }
-
-    footer {
-        font-size: 2rem;
-    }
     footer nav a {
         text-align: center;
     }
-
+    /* Responsive changes */
     header {
         margin-top: 0;
-        min-height: 100vh;
-        background-position: center; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-position: center; /* Adjust background position for mobile */
+        height: auto; /* Adjust height for mobile responsiveness */
     }
     .banner_logo {
-        width: 200px;
-        height: 150px;
+        width: 100px;
     }
 
     .banner_title {
-        font-size: 4rem; 
+        font-size: 1.75rem; /* Adjust font-size for mobile */
     }
 
     .banner_description {
-        font-size: 3rem; 
+        font-size: 1.25rem; /* Adjust font-size for mobile */
     }
 
     .banner_button {
         font-size: 1.2rem;
     }
 
-    .wrapper {
+    #wrapper {
         width: 95%;
-        display: grid;
-        grid-template-columns: auto;
     }
 
-    #wrapper h3 {
-        font-size: 3.5rem;
-    }
     table,
     .time_table {
         display: none;
-    }
-    #wrapper h2 {
-        font-size: 4rem;
-        line-height: 1.2;
-    }
-    #wrapper h4 {
-        font-size: 3rem;
-        text-align: center;
     }
     main {
         padding: 20px;
     }
 }
 
-#pagecontainer {
-    display: grid;
-} */
+@media screen and (max-width: 1000px) {
+    #wrapper {
+        width: 90%;
+    }
+}
