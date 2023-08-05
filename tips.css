@@ -418,6 +418,16 @@ h4 {
         grid-template-columns: auto;
     }
 
+    #top_list {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row !important;
+    }
+
     .testimonial {
         margin: 20px 0;
     }
