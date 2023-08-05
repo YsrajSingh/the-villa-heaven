@@ -107,7 +107,7 @@ header {
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -282,7 +282,7 @@ td {
 }
 
 footer {
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1;
     padding: 10px 10%;
     display: flex;
     flex-wrap: wrap;
@@ -331,8 +331,7 @@ h1 a:hover {
     content: "";
     display: table;
 }
-
-.column {
+*/ .column {
     margin: 20px 0;
 }
 .column h4 {
@@ -400,7 +399,7 @@ h1 a:hover {
     }
 
     .banner_button {
-        font-size: 1.2rem; /* Adjust font-size for mobile */
+        font-size: 1.2rem;
     }
 
     #wrapper {
