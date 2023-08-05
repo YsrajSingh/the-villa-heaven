@@ -265,7 +265,6 @@ ol > li > ul > li {
 .blog_post img {
     width: 100%;
     height: 100px;
-    padding: 20px;
     object-fit: cover;
 }
 
@@ -401,16 +400,24 @@ h4 {
     .column_two .blog_post {
         display: grid;
         max-width: 100%;
-        padding: 10px;
     }
     .column_two .blog_post img {
-        height: 300px;
+        height: 250px;
         width: 100%;
         object-fit: contain;
     }
 
+    #top_list {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row !important;
+    }
+
     .column_two .blog_post div {
-        padding: 20px;
         width: 100%;
     }
     #top_bar {

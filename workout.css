@@ -366,6 +366,16 @@ h1 a:hover {
         font-size: 2rem;
     }
 
+    #top_list {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row !important;
+    }
+
     h2 {
         font-size: 2rem;
         padding: 10px 0; /* Adjust padding for mobile */
