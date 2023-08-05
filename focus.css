@@ -16,6 +16,18 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* Header styles */
+header {
+    grid-column: 1 / -1; /* Span across all columns */
+    background-position: 50% 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(./images/m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
 h1,
 nav {
     text-align: center;
@@ -26,6 +38,7 @@ h3,
 dt {
     font-family: "Gabriola", sans-serif;
 }
+
 h2 {
     padding: 20px 0;
 }
@@ -56,6 +69,7 @@ h4 {
 dd {
     font-weight: bold;
 }
+
 #copyright {
     text-align: center;
     border-top: 2px solid white;
@@ -69,21 +83,11 @@ dd {
 footer nav a {
     color: #eee;
 }
+
 footer {
     display: flex;
     flex-wrap: wrap;
     font-size: smaller;
-}
-/* Header styles */
-header {
-    grid-column: 1 / -1; /* Span across all columns */
-    background-position: 50% 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(./images/m.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
 }
 
 #top_bar {
@@ -232,6 +236,7 @@ nav a {
     height: 40vh;
     object-fit: contain;
 }
+
 .main > .row > .column > p {
     font-size: 1.5em;
     font-variant: petite-caps;
@@ -289,33 +294,40 @@ h1 a:hover {
     content: "";
     display: table;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     margin-top: 4em;
 }
+
 tbody > tr {
     border-bottom: 1px solid lightgray;
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 tbody > tr > th {
     font-size: 1.5em;
     border-right: 1px solid lightgrey;
     padding: 10px;
 }
+
 tbody > tr > td {
     font-size: 1em;
     padding: 20px;
     text-align: justify;
 }
+
 .final_touch {
     font-size: 1em;
     text-align: justify;
     padding: 20px;
 }
+
 .table_image > img {
     width: 300px;
     height: 30vh;
@@ -323,6 +335,38 @@ tbody > tr > td {
 }
 
 @media screen and (max-width: 768px) {
+    /* Font size adjustments for mobile view */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .banner_title {
+        font-size: 2.5rem;
+    }
+
+    .banner_description {
+        font-size: 1rem;
+    }
+
+    .banner_button {
+        font-size: 1rem;
+    }
+
+    /* Additional font size adjustments for mobile */
+    /* ... (if needed) ... */
+
     #top_bar {
         text-align: center;
         display: block;
@@ -357,6 +401,7 @@ tbody > tr > td {
         text-align: center;
         margin: 20px 0;
     }
+
     .row {
         display: grid;
         grid-template-columns: auto;
@@ -369,9 +414,11 @@ tbody > tr > td {
     footer > div {
         width: 100%;
     }
+
     tr {
         display: block;
     }
+
     th,
     td {
         border: 0px !important;
@@ -383,6 +430,7 @@ tbody > tr > td {
         justify-content: center;
         align-items: center;
     }
+
     .table_image img {
         width: 100%;
         object-fit: contain;
@@ -393,11 +441,13 @@ tbody > tr > td {
     footer nav a {
         text-align: center;
     }
+
     header {
         margin-top: 0;
         background-position: center; /* Adjust background position for mobile */
         height: auto; /* Adjust height for mobile responsiveness */
     }
+
     .banner_logo {
         width: 100px;
     }

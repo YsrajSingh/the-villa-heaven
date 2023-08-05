@@ -354,6 +354,33 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .banner_title {
+        font-size: 2.5rem;
+    }
+
+    .banner_description {
+        font-size: 1rem;
+    }
+
+    .banner_button {
+        font-size: 1rem;
+    }
     .ordered_list b {
         font-size: 1.5rem;
         line-height: 1.25;

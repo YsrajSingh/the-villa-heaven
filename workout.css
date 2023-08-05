@@ -362,7 +362,18 @@ h1 a:hover {
     nav ul {
         flex-direction: column !important;
     }
+    h1 {
+        font-size: 2rem;
+    }
 
+    h2 {
+        font-size: 1.5rem;
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
     nav ul li {
         display: block;
     }
