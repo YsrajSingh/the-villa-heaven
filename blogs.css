@@ -41,6 +41,11 @@ h2 {
     padding: 20px 0;
 }
 
+.column_one h3,
+.column_one h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
 h3 {
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -326,7 +331,14 @@ h1 a:hover {
     /* width: 100%; */
     padding: 0px 15px;
 }
+.column_one div {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgrey;
+}
 
+.column_two div {
+    padding: 10px 0;
+}
 .new_row {
     display: flex;
     margin: 0px -15px;
@@ -354,16 +366,12 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
+    h2 {
         font-size: 2rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     h4 {
@@ -382,13 +390,10 @@ h4 {
         font-size: 1rem;
     }
     .ordered_list b {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         line-height: 1.25;
     }
 
-    h3 {
-        font-size: 2rem;
-    }
     .ordered_list ul {
         padding: 20px 0;
     }
