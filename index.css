@@ -75,7 +75,7 @@ header {
     grid-column: 1 / -1; /* Span across all columns */
     background-position: 50% 0%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(./images/gym.jpg);
+        url(images/backgrounds/index_page_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -86,7 +86,7 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     position: fixed;
-    background-color: black;
+    background-color: white;
     z-index: 1;
     width: 100%;
     min-height: 1rem;
@@ -96,7 +96,7 @@ header {
 
 #top_bar > img {
     padding: 0 10px;
-    height: 30px;
+    height: 25px;
     width: 250px;
 }
 
@@ -118,7 +118,9 @@ header {
 
 #top_list > li > a {
     display: block;
-    color: white;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -157,7 +159,7 @@ header > div {
     font-weight: 700;
     font-size: 3.5rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
+    width: 60%;
     margin: 1rem auto 0;
     line-height: 1.1;
     position: relative;
@@ -167,8 +169,8 @@ header > div {
     display: block;
 }
 
-.banner_description {
-    width: 80%;
+.banner_hero {
+    width: 30%;
     font-size: 1.5rem;
     text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.4);
     margin: 1rem auto 0;
@@ -179,7 +181,8 @@ header > div {
     flex-shrink: 0;
     padding: 0;
     display: block;
-    color: white;
+    color: black;
+    background-color: white;
 }
 
 .banner_button {
@@ -195,7 +198,6 @@ header > div {
     border: 2px solid white;
     padding: 20px;
     width: 200px;
-    margin: 1rem auto 0;
 }
 
 nav a {
@@ -362,7 +364,7 @@ h1 a:hover {
         font-size: 1.75rem; /* Adjust font-size for mobile */
     }
 
-    .banner_description {
+    .banner_hero {
         font-size: 1.25rem; /* Adjust font-size for mobile */
     }
 
