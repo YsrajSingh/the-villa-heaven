@@ -26,6 +26,7 @@ h3,
 dt {
     font-family: "Gabriola", sans-serif;
 }
+
 h2 {
     padding: 20px 0;
 }
@@ -52,6 +53,7 @@ h3 {
 dd {
     font-weight: bold;
 }
+
 #copyright {
     text-align: center;
     border-top: 2px solid white;
@@ -66,14 +68,16 @@ dd {
 footer nav a {
     color: #eee;
 }
+
 footer {
     display: flex;
     flex-wrap: wrap;
     font-size: smaller;
 }
+
 /* Header styles */
 header {
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1;
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,6 +112,41 @@ header {
     justify-content: space-between;
 }
 
+.about_us_row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px auto;
+}
+
+.testimonial {
+    display: block;
+    text-align: center;
+    border: 1px solid #999;
+    padding: 30px;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.testimonial b {
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.testimonial div {
+    color: #111;
+    font-style: italic;
+    text-align: justify;
+}
+
 #top_bar > img {
     padding: 0 10px;
     height: 25px;
@@ -121,7 +160,7 @@ header {
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -153,7 +192,7 @@ header > div {
 }
 
 .banner_logo {
-    width: 141px; /* Adjusted width for mobile responsiveness */
+    width: 141px;
     margin: 1rem auto 0;
     object-fit: contain;
     background-size: contain;
@@ -251,7 +290,7 @@ nav a {
 }
 
 footer {
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1;
     padding: 10px 10%;
     display: flex;
     flex-wrap: wrap;
@@ -296,6 +335,78 @@ h1 a:hover {
     display: table;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 4em;
+}
+
+tbody > tr {
+    border-bottom: 1px solid lightgray;
+}
+
+tbody > tr > th {
+    font-size: 1.5em;
+    border-right: 1px solid lightgrey;
+    padding: 10px;
+}
+
+tbody > tr > td {
+    font-size: 1em;
+    padding: 20px;
+    text-align: justify;
+}
+
+.properties_button {
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 15px 40px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.tags li {
+    background: orange;
+    border: white;
+    color: white;
+    margin: 8px;
+    border-radius: 38px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.properties_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.properties_description h3 {
+    padding: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li {
+    padding: 15px;
+}
+
+.list span {
+    font-weight: 800;
+}
+
+td h3 {
+    font-family: circular;
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 768px) {
     #categories {
         grid-template-columns: 1fr 1fr;
@@ -308,6 +419,7 @@ h1 a:hover {
         background-color: black;
         padding: 10px 0;
     }
+
     #top_list {
         text-align: center;
         width: 100%;
@@ -317,6 +429,7 @@ h1 a:hover {
         flex-wrap: wrap;
         flex-direction: row !important;
     }
+
     #top_bar a {
         display: block;
         margin: 5px 0;
@@ -352,29 +465,32 @@ h1 a:hover {
     footer > div {
         width: 100%;
     }
+
     footer nav a {
         text-align: center;
     }
+
     /* Responsive changes */
     header {
         margin-top: 0;
-        background-position: center; /* Adjust background position for mobile */
-        height: auto; /* Adjust height for mobile responsiveness */
+        background-position: center;
+        height: auto;
     }
+
     .banner_logo {
         width: 100px;
     }
 
     .banner_title {
-        font-size: 1.75rem; /* Adjust font-size for mobile */
+        font-size: 1.75rem;
     }
 
     .banner_hero {
-        font-size: 1.25rem; /* Adjust font-size for mobile */
+        font-size: 1.25rem;
     }
 
     .banner_button {
-        font-size: 1.2rem; /* Adjust font-size for mobile */
+        font-size: 1.2rem;
     }
 
     #wrapper {
@@ -407,19 +523,21 @@ h1 a:hover {
     padding: 20px;
     margin: 20px;
     background: url(images/backgrounds/footer_page_2.jpg);
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1;
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
     width: 100%;
 }
+
 .col {
     width: 50%;
     display: grid;
     text-align: left;
     color: white;
 }
+
 .col h2,
 .col h3 {
     font-family: "Jost", sans-serif;
@@ -429,6 +547,7 @@ h1 a:hover {
 .mt-50 {
     margin-top: 50px;
 }
+
 .column {
     font-family: cursive;
     flex: 1;
@@ -489,6 +608,7 @@ h1 a:hover {
     color: white;
     font-family: Montserrat, sans-serif;
 }
+
 .display-header h2 {
     font-family: Montserrat, sans-serif;
     font-weight: 5;
@@ -500,6 +620,7 @@ h1 a:hover {
 .align-items-center {
     align-items: center !important;
 }
+
 .justify-content-center {
     justify-content: center !important;
 }
@@ -511,6 +632,7 @@ h1 a:hover {
 .flex-wrap {
     flex-wrap: wrap !important;
 }
+
 .d-flex {
     display: flex !important;
     width: 100%;
@@ -527,6 +649,7 @@ h1 a:hover {
     color: #f35525;
     border: none;
 }
+
 .text-uppercase {
     text-transform: uppercase;
 }
